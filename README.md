@@ -19,7 +19,7 @@ The devs will catch the issues with build environment first.
 1. Build the container image;
 2. Create a directory where the AOSP source and builds will be stored;
 3. Run the container, mounting the directory created above at "/aosp";
-4. Follow the instructions from the AOSP source site, starting from `repo init`:
+4. Follow the instructions at the AOSP source site, starting from `repo init`:
   - http://source.android.com/source/downloading.html#initializing-a-repo-client
 
 ## Customizing the Container Image
@@ -37,5 +37,5 @@ docker build \
   --build-arg=AOSP_UID=1000 \
   --build-arg=AOSP_NAME="My Name" \
   --build-arg=AOSP_EMAIL="myemail@example.com" \
-  --tag=docker-aosp /path/containing/the/Dockerfile
+  -t aosp-builder-jdk8 -f Dockerfile-jdk8 /path/containing/the/Dockerfile
 ```
