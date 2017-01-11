@@ -13,7 +13,7 @@ MAINTAINER Otavio Cipriani <otavio.n.cipriani@gmail.com>
 RUN apt-get update && apt-get install -y --no-install-recommends bc bison \
   build-essential ccache curl flex gcc-multilib git-core g++-multilib gnupg \
   gperf lib32ncurses5-dev lib32z-dev libc6-dev-i386 libgl1-mesa-dev \
-  libx11-dev libxml2-utils openjdk-8-jdk python-networkx rsync unzip \
+  libx11-dev libxml2-utils lunzip openjdk-8-jdk python-networkx rsync unzip \
   x11proto-core-dev xsltproc zip zlib1g-dev
 
 # Add the "repo" tool
