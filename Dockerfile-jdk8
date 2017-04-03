@@ -39,7 +39,8 @@ RUN git config --global color.ui auto && \
   git config --global user.email "$ANDROID_EMAIL"
 
 # Set environment variables required to build Android
-ENV USER=android
+ENV USER=android \
+    ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
 # Mount point for the Android source tree
 VOLUME /android
